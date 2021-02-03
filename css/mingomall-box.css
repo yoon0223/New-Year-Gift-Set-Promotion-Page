@@ -99,7 +99,21 @@
 }
 
 @media (max-width: 420px){
-    /*1개씩*/
+    .menu-title li a {margin-right: 9px;}
+    .menu-info > div > div > div {float: left; width: 180px;}
+}
+
+@media (max-width: 390px){
+    .menu-title li a {margin-right: 9px;}
+    .menu-info > div > div > div {float: left; width: 160px;}
+}
+
+@media (max-width: 350px){
+    .menu-title li a {margin-right: 9px;}
+    .menu-info > div > div > div {float: left; width: 150px;}
+}
+
+@media (max-width: 330px){
     .menu-title li a {margin-right: 9px;}
     .menu-info > div > div > div {float: left; width: 250px;}
 }
