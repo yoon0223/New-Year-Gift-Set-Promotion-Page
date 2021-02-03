@@ -69,7 +69,7 @@
 
 @media (max-width: 720px){
     .menu-title li a {margin-right: 9px;}
-    .menu-info > div > div > div {float: left; width: 250px;}
+    .menu-info > div > div > div {float: left; width: 240px;}
 }
 @media (max-width: 600px){
     #menu_mingo .container {}
