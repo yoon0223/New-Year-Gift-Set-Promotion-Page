@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+.container {position: relative; width: 1280px; margin: 0 auto; background: rgba(0,0,0,.0);}
+.row {padding: 0 48px;}
+
+.menu {padding: 100px 0;}
+.menu-title {margin-bottom: 60px;}
+.menu-title ul {overflow: hidden; width: 424px; margin: 0 auto;}
+.menu-title li {float: left; width: 210px; text-align: center; border: 1px solid #c4c4c4; margin-right: -1px; list-style: none;}
+.menu-title li a {display: block; padding: 15px 0; color: #000000; text-decoration: none;}
+.menu-title li.active a {background: #666; color: #fff;}
+
+.menu-info {overflow: hidden;}
+.menu-info > div > div > div {float: left; width: 292px;}
+.menu-info > div > div > div:last-child {margin-right: 0;}
+.menu-info > div > div > div .infor {background: #fff; padding: 15px;}
+.menu-info > div > div > div .infor .infor_btn {overflow: hidden;}
+.menu-info > div > div > div .infor .infor_btn .active {background: #666; color: #fff;}
+.menu-info > div > div > div .infor .infor_btn a {float: left; width: 100%; margin-right: 2%; text-align: center; padding: 10px 0; box-sizing: border-box; background: #f2f2f2; color: black; text-decoration: none;}
+.menu-info > div > div > div .infor .infor_btn a:last-child {margin-right: 0;}
+.top-section {
+    height: 240px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+#image-container {
+    width: 380px;
+    height: 240px;
+}
+
+.swiper-slide {
+    border: 1px solid #d9d9d9;
+}
+
+.swiper-slide:hover {
+    border: 1px solid #db5b5f;
+}
+
+/* 미디어쿼리 */
+@media (max-width: 1290px){
+    .container {width: 100%;}
+    .row {padding: 0 24px;}
+}
+@media (max-width: 1270px){
+    /*4개씩*/
+    .container {width: 100%;}
+    .row {padding: 0 24px;}
+    .menu-info > div > div > div {float: left; width: 250px;}
+}
+@media (max-width: 800px){
+    /*카테고리 1줄 상품 2개씩*/
+    body {background: #FFFFFF;}
+    .row {padding: 0 16px;}
+
+    #menu_mingo .row {background: #fff; margin: 24px; padding: 24px;}
+    #menu_clean .row {background: #fff; margin: 24px; padding: 24px;}
+    .menu {padding: 0;}
+    .menu-title {margin-bottom: 30px;}
+    .menu-title ul {position: relative; padding-bottom: 10px; width: 100%;}
+    .menu-title ul:before {content: ''; position: absolute; z-index: 1; left: 0; bottom: 0px; width: 100%; height: 2px; background: #e1e1e1;}
+    .menu-title li {width: auto; border: 0;}
+    .menu-title li a {position: relative; color: #666; padding: 0; margin-right: 35px;}
+    .menu-title li.active a:before {content: ''; position: absolute; z-index: 10000; left: 0; bottom: -10px; width: 100%; height: 2px; background: #666;}
+    .menu-title li.active a {background: none; color: #666;}
+    .menu-info > div > div > div {float: left; width: 310px;}
+}
+
+@media (max-width: 640px){
+    .menu-title li a {margin-right: 9px;}
+    .menu-info > div > div > div {float: left; width: 250px;}
+}
+@media (max-width: 600px){
+    #menu_mingo .container {}
+    #menu_mingo .container:after {content: ''; position: absolute; z-index: 20; top: 0; right: 0; width: 8px; height: 100%; background: #d9d7e0;}
+    #menu_mingo .row {position: relative; margin: 8px; padding: 16px; margin-right: 0; padding-right: 0;}
+    #menu_mingo .row:after {content: ''; position: absolute; top: 0; right: 0; z-index: 10; width: 24px; height: 100%; background-color: #fff;}
+    #menu_clean .container {}
+    #menu_clean .container:after {content: ''; position: absolute; z-index: 20; top: 0; right: 0; width: 8px; height: 100%; background: #d9d7e0;}
+    #menu_clean .row {position: relative; margin: 8px; padding: 16px; margin-right: 0; padding-right: 0;}
+    #menu_clean .row:after {content: ''; position: absolute; top: 0; right: 0; z-index: 10; width: 24px; height: 100%; background-color: #fff;}
+    .menu-title {margin-bottom: 20px;}
+    .menu-title ul {padding-bottom: 8px; white-space: nowrap; overflow-x: auto;}
+    .menu-title li a {margin-right: 15px;}
+    .menu-title li.active a:before {bottom: -8px;}
+
+    .menu-info {position: relative; z-index: 30;}
+    .menu-info > div > div > div .infor {padding: 5px;}
+}
+@media (max-width: 480px){
+    .menu-title li a {margin-right: 9px;}
+    .menu-info > div > div > div {float: left; width: 210px;}
+}
+
+@media (max-width: 320px){
+    /*1개씩*/
+    .menu-title li a {margin-right: 9px;}
+    .menu-info > div > div > div {float: left; width: 250px;}
+}
