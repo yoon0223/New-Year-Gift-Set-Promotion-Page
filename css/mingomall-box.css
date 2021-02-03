@@ -64,10 +64,10 @@
     .menu-title li a {position: relative; color: #666; padding: 0; margin-right: 35px;}
     .menu-title li.active a:before {content: ''; position: absolute; z-index: 10000; left: 0; bottom: -10px; width: 100%; height: 2px; background: #666;}
     .menu-title li.active a {background: none; color: #666;}
-    .menu-info > div > div > div {float: left; width: 310px;}
+    .menu-info > div > div > div {float: left; width: 220px;}
 }
 
-@media (max-width: 640px){
+@media (max-width: 720px){
     .menu-title li a {margin-right: 9px;}
     .menu-info > div > div > div {float: left; width: 250px;}
 }
@@ -88,12 +88,17 @@
     .menu-info {position: relative; z-index: 30;}
     .menu-info > div > div > div .infor {padding: 5px;}
 }
-@media (max-width: 480px){
+@media (max-width: 520px){
     .menu-title li a {margin-right: 9px;}
     .menu-info > div > div > div {float: left; width: 210px;}
 }
 
-@media (max-width: 320px){
+@media (max-width: 440px){
+    .menu-title li a {margin-right: 9px;}
+    .menu-info > div > div > div {float: left; width: 180px;}
+}
+
+@media (max-width: 420px){
     /*1개씩*/
     .menu-title li a {margin-right: 9px;}
     .menu-info > div > div > div {float: left; width: 250px;}
