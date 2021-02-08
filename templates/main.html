@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>밍고몰 설 선물세트 홍보 페이지</title>
+    <title>밍고몰 설 선물세트 프로모션</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--css-->
-    <link rel="stylesheet" href="../css/mingomall-image.css">
-    <link rel="stylesheet" href="../css/mingomall-font.css">
-    <link rel="stylesheet" href="../css/mingomall-box.css">
+    <link rel="stylesheet" href="../css/mingomall.css">
 </head>
 
 <body>
     <section id="intro">
+        <!-- 반응형 이미지 삽입 시 .imgArea .box .img 양식-->
+        <!-- 반응형 유튜브 비디오 삽입 시 .videoArea .video .video-container .iframe 양식-->
+        <!-- 사용된 map은 #mingomall-item-1 #mingomall-banner #mingomall-item-2 #mingomall-item-all-->
         <div class="imgArea">
             <div class="box">
                 <img src="../static/maingomall-main.jpg" alt="밍고몰 홍보 페이지">
@@ -56,23 +56,48 @@
         </div>
     </section>
 
-    <!--840*1960, 1080*(1920, 2160, 2220, 2280, 2340, 2400), 1200*1920, 1440*2560, 1600*2560, 1644*3840-->
+    <!-- 이하 제품 관련 레이아웃 -->
+    <!-- 기본 구조 .container .row .menu -->
+    <!--840*1960, 1080*(1920, 2160, 2220, 2280, 2340, 2400), 1200*1920, 1440*2560, 1600*2560, 1644*3840 해상도에서는 딱 맞아 떨어지지 않지만 대중적이지 않은 해상도이니 문제는 없을 것-->
     <section id="menu_mingo">
         <div class="container">
             <div class="row">
                 <div class="menu">
+                    <!-- 카데고리 선택 -->
                     <div class="menu-title sub-title">
                         <ul>
                             <li class="active"><a href="#menu_mingo">선물세트</a></li>
                             <li><a href="#menu_clean">방역</a></li>
                         </ul>
                     </div>
+                    <!-- 제품 레이아웃-->
+                    <!-- 기본 구조 .menu-info .swiper-container2 .swiper-wrapper-->
                     <div class="menu-info">
                         <div class="swiper-container2">
                             <div class="swiper-wrapper">
+                                <!-- 제품 추가 시 기본 구조 아래
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/한우.jpg" alt="한우 실속 세트">
+                                        <img class="image-container" src="" alt="">
+                                    </div>
+                                    <div class="infor">
+                                        <div class="item-info">
+                                            <p class="item-name">제품 이름</p>
+                                            <span class="selling-price">
+                                                <em class="price-percent">할인율</em>
+                                                <span class="price-before">소비자가</span>
+                                                <span class="price-after">판매가</span>
+                                            </span>
+                                        </div>
+                                        <div class="infor_btn btn-txt">
+                                            <a href="" class="active">구매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                상단의 양식을 따를 것-->
+                                <div class="swiper-slide">
+                                    <div class="top-section">
+                                        <img class="image-container" src="../static/한우.jpg" alt="한우 실속 세트">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -90,7 +115,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/최고급한우.jpg" alt="한우 최고급 세트">
+                                        <img class="image-container" src="../static/최고급한우.jpg" alt="한우 최고급 세트">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -108,7 +133,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/라파허니.jpg" alt="라파데오-라파허니">
+                                        <img class="image-container" src="../static/라파허니.jpg" alt="라파데오-라파허니">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -126,7 +151,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/정관장.jpg" alt="정관장 홍삼비력">
+                                        <img class="image-container" src="../static/정관장.jpg" alt="정관장 홍삼비력">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -144,7 +169,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/무선충전.jpg" alt="고속무선충전 AL700UV 알림시계 UV살균">
+                                        <img class="image-container" src="../static/무선충전.jpg" alt="고속무선충전 AL700UV 알림시계 UV살균">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -162,7 +187,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/프렌디.jpg" alt="[홀리트리] 프렌디 2000IU">
+                                        <img class="image-container" src="../static/프렌디.jpg" alt="[홀리트리] 프렌디 2000IU">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -180,7 +205,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/커피잔세트.jpg" alt="[로얄크래프톤] 본차이나 모던골드 커피잔세트 5조">
+                                        <img class="image-container" src="../static/커피잔세트.jpg" alt="[로얄크래프톤] 본차이나 모던골드 커피잔세트 5조">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -198,7 +223,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/궁중팬.jpg" alt="[로얄크래프톤] 바실 통3중 스텐 궁중팬 + 유리뚜껑">
+                                        <img class="image-container" src="../static/궁중팬.jpg" alt="[로얄크래프톤] 바실 통3중 스텐 궁중팬 + 유리뚜껑">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -216,7 +241,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/보리굴비.jpg" alt="영광 보리굴비 선물세트">
+                                        <img class="image-container" src="../static/보리굴비.jpg" alt="영광 보리굴비 선물세트">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -234,7 +259,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/참굴비.jpg" alt="참굴비 선물세트">
+                                        <img class="image-container" src="../static/참굴비.jpg" alt="참굴비 선물세트">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -252,7 +277,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/사과중과.jpg" alt="명절 사과선물세트 중과">
+                                        <img class="image-container" src="../static/사과중과.jpg" alt="명절 사과선물세트 중과">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -270,7 +295,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/사과제수용.jpg" alt="명절 사과선물세트 제수용">
+                                        <img class="image-container" src="../static/사과제수용.jpg" alt="명절 사과선물세트 제수용">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -288,7 +313,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/명화특C호.jpg" alt="애경 명화 특C호">
+                                        <img class="image-container" src="../static/명화특C호.jpg" alt="애경 명화 특C호">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -306,7 +331,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/정성6호.jpg" alt="애경 정성 6호">
+                                        <img class="image-container" src="../static/정성6호.jpg" alt="애경 정성 6호">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -324,7 +349,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/명화특A호.jpg" alt="애경 명화 특A호">
+                                        <img class="image-container" src="../static/명화특A호.jpg" alt="애경 명화 특A호">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -342,7 +367,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/저주파안마기.jpg" alt="온열 저주파 안마기">
+                                        <img class="image-container" src="../static/저주파안마기.jpg" alt="온열 저주파 안마기">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -360,7 +385,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/위생키트4호.jpg" alt="[엘하우스] 위생키트 4호">
+                                        <img class="image-container" src="../static/위생키트4호.jpg" alt="[엘하우스] 위생키트 4호">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -378,7 +403,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/실속형1호.jpg" alt="[랩신] 위생세트 실속형 1호">
+                                        <img class="image-container" src="../static/실속형1호.jpg" alt="[랩신] 위생세트 실속형 1호">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -396,7 +421,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/고급형2호.jpg" alt="[랩신] 위생세트 고급형 2호">
+                                        <img class="image-container" src="../static/고급형2호.jpg" alt="[랩신] 위생세트 고급형 2호">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -414,7 +439,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/타트체리.jpg" alt="[그린애] 타트체리100 과채주스">
+                                        <img class="image-container" src="../static/타트체리.jpg" alt="[그린애] 타트체리100 과채주스">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -432,7 +457,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/인기건어물.jpg" alt="인기 건어물 선물세트">
+                                        <img class="image-container" src="../static/인기건어물.jpg" alt="인기 건어물 선물세트">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -450,7 +475,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/머랭쿠키.jpg" alt="달콤 머랭쿠키">
+                                        <img class="image-container" src="../static/머랭쿠키.jpg" alt="달콤 머랭쿠키">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -466,7 +491,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/춘천닭갈비.jpg" alt="춘천 빨강머리이모 닭갈비">
+                                        <img class="image-container" src="../static/춘천닭갈비.jpg" alt="춘천 빨강머리이모 닭갈비">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -482,7 +507,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/한지마스크.jpg" alt="[도담] 한지 마스크">
+                                        <img class="image-container" src="../static/한지마스크.jpg" alt="[도담] 한지 마스크">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -498,7 +523,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/건어명가동해.jpg" alt="[건어명가동해] 건어물 선물세트">
+                                        <img class="image-container" src="../static/건어명가동해.jpg" alt="[건어명가동해] 건어물 선물세트">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -520,7 +545,7 @@
         </div>
     </section>
 
-
+    <!-- 카테고리 섹션 구분 이하 구조는 동일함 -->
     <section id="menu_clean">
         <div class="container">
             <div class="row">
@@ -536,7 +561,7 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/위생키트4호.jpg" alt="[엘하우스] 위생키트 4호">
+                                        <img class="image-container" src="../static/위생키트4호.jpg" alt="[엘하우스] 위생키트 4호">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -554,7 +579,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/실속형1호.jpg" alt="[랩신] 위생세트 실속형 1호">
+                                        <img class="image-container" src="../static/실속형1호.jpg" alt="[랩신] 위생세트 실속형 1호">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -572,7 +597,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/고급형2호.jpg" alt="[랩신] 위생세트 고급형 2호">
+                                        <img class="image-container" src="../static/고급형2호.jpg" alt="[랩신] 위생세트 고급형 2호">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -590,7 +615,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/휴가드.jpg" alt="휴가드 황사방역마스크(KF94)">
+                                        <img class="image-container" src="../static/휴가드.jpg" alt="휴가드 황사방역마스크(KF94)">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -608,7 +633,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/닥터스.jpg" alt="닥터스 클린겔">
+                                        <img class="image-container" src="../static/닥터스.jpg" alt="닥터스 클린겔">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -626,7 +651,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/밍고덴탈.jpg" alt="밍고 덴탈마스크">
+                                        <img class="image-container" src="../static/밍고덴탈.jpg" alt="밍고 덴탈마스크">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -644,7 +669,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/나인포.jpg" alt="나인포 블랙 마스크">
+                                        <img class="image-container" src="../static/나인포.jpg" alt="나인포 블랙 마스크">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
@@ -662,7 +687,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="top-section">
-                                        <img id="image-container" src="../static/한지마스크.jpg" alt="[도담] 한지 마스크">
+                                        <img class="image-container" src="../static/한지마스크.jpg" alt="[도담] 한지 마스크">
                                     </div>
                                     <div class="infor">
                                         <div class="item-info">
