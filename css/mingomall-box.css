@@ -16,6 +16,7 @@
 .menu-info > div > div > div .infor {background: #fff; padding: 15px;}
 .menu-info > div > div > div .infor .infor_btn {overflow: hidden;}
 .menu-info > div > div > div .infor .infor_btn .active {background: #666; color: #fff;}
+.menu-info > div > div > div .infor .infor_btn .active {background: #666; color: #fff;}
 .menu-info > div > div > div .infor .infor_btn a {float: left; width: 100%; margin-right: 2%; text-align: center; padding: 10px 0; box-sizing: border-box; background: #f2f2f2; color: black; text-decoration: none;}
 .menu-info > div > div > div .infor .infor_btn a:last-child {margin-right: 0;}
 .top-section {
@@ -62,8 +63,8 @@
     .menu-title ul:before {content: ''; position: absolute; z-index: 1; left: 0; bottom: 0px; width: 100%; height: 2px; background: #e1e1e1;}
     .menu-title li {width: auto; border: 0;}
     .menu-title li a {position: relative; color: #666; padding: 0; margin-right: 35px;}
-    .menu-title li.active a:before {content: ''; position: absolute; z-index: 10000; left: 0; bottom: -10px; width: 100%; height: 2px; background: #666;}
     .menu-title li.active a {background: none; color: #666;}
+    .menu-title li.active a:before {content: ''; position: absolute; z-index: 10000; left: 0; bottom: -10px; width: 100%; height: 2px; background: #666;}
     .menu-info > div > div > div {float: left; width: 220px;}
 }
 
