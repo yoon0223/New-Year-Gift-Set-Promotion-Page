@@ -5,6 +5,12 @@
 /* 중간 부분 기본 구조 */
 .container {position: relative; width: 1280px; margin: 0 auto; background: rgba(0,0,0,.0);}
 .row {padding: 0 48px;}
+#menu_korea {
+    background: url("../static/bgimg-.jpg") no-repeat center center;
+    background-size: cover;
+    margin-top: -20px;
+}
+#menu_korea .row {padding: 0 180px;}
 
 /* 폰트 다운 양식 */
 @font-face {font-family: 'SDSamliphopangche_Outline'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff'); font-weight: normal; font-style: normal;}
@@ -27,8 +33,9 @@ img {max-width: 100%; width: 200px;}
 
 /* 인트로 섹션 이미지 설정 */
 #intro {position: relative; top: 0; left: 0;}
-#intro img {max-width: 3000px; width: 100%;}
+#intro img {max-width: 1920px; width: 100%;}
 #intro .imgArea {text-align: center; vertical-align: middle;}
+.bgimg {background: url("../static/bgimg.jpg") no-repeat center center; background-size: cover; margin-top: -5px;}
 
 /* 인트로 섹션 비디오 설정 */
 #intro .videoArea {text-align: center; vertical-align: middle;}
@@ -69,6 +76,8 @@ iframe {z-index: 1; top: 0; left: 0; position: absolute; width: 100%; height: 10
 @media (max-width: 1290px){
     .container {width: 100%;}
     .row {padding: 0 24px;}
+    #menu_korea .row {padding: 0 90px;}
+    #menu_korea .menu {padding: 0 100px;}
 }
 
 @media (max-width: 1270px){
@@ -85,6 +94,7 @@ iframe {z-index: 1; top: 0; left: 0; position: absolute; width: 100%; height: 10
 
     #menu_mingo .row {background: #fff; margin: 24px; padding: 24px;}
     #menu_clean .row {background: #fff; margin: 24px; padding: 24px;}
+    #menu_korea .row {margin: 24px; padding: 24px;}
     .menu {padding: 0;}
     .menu-title {margin-bottom: 30px;}
     .menu-title ul {position: relative; padding-bottom: 10px; width: 100%;}
@@ -110,6 +120,10 @@ iframe {z-index: 1; top: 0; left: 0; position: absolute; width: 100%; height: 10
     #menu_clean .container:after {content: ''; position: absolute; z-index: 20; top: 0; right: 0; width: 8px; height: 100%; background: #d9d7e0;}
     #menu_clean .row {position: relative; margin: 8px; padding: 16px; margin-right: 0; padding-right: 0;}
     #menu_clean .row:after {content: ''; position: absolute; top: 0; right: 0; z-index: 10; width: 24px; height: 100%; background-color: #fff;}
+    #menu_korea .container {}
+    #menu_korea .container:after {content: ''; position: absolute; z-index: 20; top: 0; right: 0; width: 8px; height: 100%;}
+    #menu_korea .row {position: relative; margin: 8px; padding: 16px; margin-right: 0; padding-right: 0;}
+    #menu_korea .row:after {content: ''; position: absolute; top: 0; right: 0; z-index: 10; width: 24px; height: 100%;}
     .menu-title {margin-bottom: 20px;}
     .menu-title ul {padding-bottom: 8px; white-space: nowrap; overflow-x: auto;}
     .menu-title li a {margin-right: 15px;}
