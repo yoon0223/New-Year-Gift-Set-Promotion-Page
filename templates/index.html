@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <title>mingomall president's day sale event</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!--css-->
+    <!-- 통합 css 문서 -->
     <link rel="stylesheet" href="../css/mingomall.css">
 </head>
 
 <body>
+    <!-- 이미지 영역 -->
     <section id="intro">
-        <!-- 반응형 이미지 삽입 시 .imgArea .box .img 양식-->
-        <!-- 사용된 map은 #mingomall-main-->
+        <!-- 화면을 꽉 채우는 반응형 이미지 삽입 시 intro 하단에 아래의 양식으로 추가
+        <div class="imgArea">
+            <div class="box">
+                <img>
+                추가적으로 이미지 영역 내 특정 부분에 링크 삽입을 원할 시 map 태그 이용
+                <map name="" id="">
+                    <area shape="" coords="" href="">
+                </map>
+            </div>
+        </div>
+        화면의 일부만 채우는 이미지를 사용할 경우 intro 외의 영역에 이미지 삽입 -->
         <div class="imgArea">
             <div class="box">
                 <img src="../static/korean-mingomall.jpg" alt="president's day sale event" usemap="#mingomall-main">
@@ -24,16 +34,15 @@
         </div>
     </section>
 
+    <!-- 제품 레이아웃-->
     <section id="menu_korea">
         <div class="container">
             <div class="row">
                 <div class="menu">
-                    <!-- 제품 레이아웃-->
-                    <!-- 기본 구조 .menu-info .swiper-container2 .swiper-wrapper-->
                     <div class="menu-info">
                         <div class="swiper-container2">
                             <div class="swiper-wrapper">
-                                <!-- 제품 추가 시 기본 구조 아래
+                                <!-- 제품 추가 시 swiper-wrapper 하단에 아래의 양식으로 추가
                                 <div class="swiper-slide">
                                     <div class="top-section">
                                         <img class="image-container" src="" alt="">
@@ -52,7 +61,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                상단의 양식을 따를 것-->
+                                -->
                                 <div class="swiper-slide">
                                     <div class="top-section">
                                         <img class="image-container" src="../static/korean-item-1-img.jpg" alt="Gorye Celadon Cellphone Case">
@@ -205,6 +214,7 @@
         </div>
     </section>
 
+    <!-- 이미지 영역 -->
     <section id="intro">
         <div class="imgArea">
             <div class="box">
@@ -215,6 +225,7 @@
         </div>
     </section>
 
+    <!-- 이용한 오픈 소스 자바스크립트 -->
     <script type="text/javascript" src="../js/jquery.min..js"></script>
     <script type="text/javascript" src="../js/jquery.rwdImageMaps.js"></script>
     <script type="text/javascript" src="../js/jquery.rwdImageMaps.min.js"></script>

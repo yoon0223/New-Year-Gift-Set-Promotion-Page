@@ -4,14 +4,33 @@
     <meta charset="UTF-8">
     <title>밍고몰 설 선물세트 프로모션</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 통합 css 문서 -->
     <link rel="stylesheet" href="../css/mingomall.css">
 </head>
 
 <body>
+    <!-- 이미지 영역 -->
     <section id="intro">
-        <!-- 반응형 이미지 삽입 시 .imgArea .box .img 양식-->
-        <!-- 반응형 유튜브 비디오 삽입 시 .videoArea .video .video-container .iframe 양식-->
-        <!-- 사용된 map은 #mingomall-item-1 #mingomall-banner #mingomall-item-2 #mingomall-item-all-->
+        <!-- 화면을 꽉 채우는 반응형 이미지 삽입 시 intro 하단에 아래의 양식으로 추가
+        <div class="imgArea">
+            <div class="box">
+                <img>
+                추가적으로 이미지 영역 내 특정 부분에 링크 삽입을 원할 시 map 태그 이용
+                <map name="" id="">
+                    <area shape="" coords="" href="">
+                </map>
+            </div>
+        </div>
+        화면의 일부만 채우는 이미지를 사용할 경우 intro 외의 영역에 이미지 삽입 -->
+        <!-- 반응형 유튜브 비디오 삽입 시 intro 하단에 아래의 양식으로 추가
+        <div class="videoArea">
+            <div class="video">
+                <div class="video-container">
+                    <iframe width="100%" height="100%" src="" frameborder="0" allow="" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        -->
         <div class="imgArea">
             <div class="box">
                 <img src="../static/maingomall-main.jpg" alt="밍고몰 홍보 페이지">
@@ -56,26 +75,22 @@
         </div>
     </section>
 
-    <!-- 이하 제품 관련 레이아웃 -->
-    <!-- 기본 구조 .container .row .menu -->
-    <!--840*1960, 1080*(1920, 2160, 2220, 2280, 2340, 2400), 1200*1920, 1440*2560, 1600*2560, 1644*3840 해상도에서는 딱 맞아 떨어지지 않지만 대중적이지 않은 해상도이니 문제는 없을 것-->
+    <!-- 제품 레이아웃 1 -->
     <section id="menu_mingo">
         <div class="container">
             <div class="row">
                 <div class="menu">
-                    <!-- 카데고리 선택 -->
+                    <!-- 카데고리 -->
                     <div class="menu-title sub-title">
                         <ul>
                             <li class="active"><a href="#menu_mingo">선물세트</a></li>
                             <li><a href="#menu_clean">방역</a></li>
                         </ul>
                     </div>
-                    <!-- 제품 레이아웃-->
-                    <!-- 기본 구조 .menu-info .swiper-container2 .swiper-wrapper-->
                     <div class="menu-info">
                         <div class="swiper-container2">
                             <div class="swiper-wrapper">
-                                <!-- 제품 추가 시 기본 구조 아래
+                                <!-- 제품 추가 시 swiper-wrapper 하단에 아래의 양식으로 추가
                                 <div class="swiper-slide">
                                     <div class="top-section">
                                         <img class="image-container" src="" alt="">
@@ -94,7 +109,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                상단의 양식을 따를 것-->
+                                -->
                                 <div class="swiper-slide">
                                     <div class="top-section">
                                         <img class="image-container" src="../static/한우.jpg" alt="한우 실속 세트">
@@ -545,11 +560,12 @@
         </div>
     </section>
 
-    <!-- 카테고리 섹션 구분 이하 구조는 동일함 -->
+    <!-- 제품 레이아웃 2 -->
     <section id="menu_clean">
         <div class="container">
             <div class="row">
                 <div class="menu">
+                    <!-- 카테고리 -->
                     <div class="menu-title sub-title">
                         <ul>
                             <li><a href="#menu_mingo">선물세트</a></li>
@@ -559,6 +575,26 @@
                     <div class="menu-info">
                         <div class="swiper-container2">
                             <div class="swiper-wrapper">
+                                <!-- 제품 추가 시 swiper-wrapper 하단에 아래의 양식으로 추가
+                                <div class="swiper-slide">
+                                    <div class="top-section">
+                                        <img class="image-container" src="" alt="">
+                                    </div>
+                                    <div class="infor">
+                                        <div class="item-info">
+                                            <p class="item-name">제품 이름</p>
+                                            <span class="selling-price">
+                                                <em class="price-percent">할인율</em>
+                                                <span class="price-before">소비자가</span>
+                                                <span class="price-after">판매가</span>
+                                            </span>
+                                        </div>
+                                        <div class="infor_btn btn-txt">
+                                            <a href="" class="active">구매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                -->
                                 <div class="swiper-slide">
                                     <div class="top-section">
                                         <img class="image-container" src="../static/위생키트4호.jpg" alt="[엘하우스] 위생키트 4호">
@@ -709,6 +745,7 @@
         </div>
     </section>
 
+    <!-- 이용한 오픈 소스 자바스크립트 -->
     <script type="text/javascript" src="../js/jquery.min..js"></script>
     <script type="text/javascript" src="../js/jquery.rwdImageMaps.js"></script>
     <script type="text/javascript" src="../js/jquery.rwdImageMaps.min.js"></script>
