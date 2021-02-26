@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/* 중간 부분 기본 구조 */
+* {margin:0; padding:0;}
+.container {position: relative; max-width: 1280px; margin: 0 auto; background: rgba(0,0,0,.0);}
+
+/* 반응형 이미지 설정 */
+img {max-width: 100%;}
+.box img {margin: 20px;}
+.box {position: relative; width: 100%;}
+.box:before {content: ""; display: block; padding-top: 0%; vertical-align: center;}
+.bgimg {background: url("../static/bg-bagic.jpg") no-repeat center center; background-size: cover; margin-top: -5px;}
+
+/* 화면을 꽉 채우는 이미지를 사용하기 위해 인트로 섹션 내 이미지 영역 설정 */
+#intro {position: relative; top: 0; left: 0;}
+#intro img {max-width: 1920px; width: 100%;}
+#intro .imgArea {text-align: center; vertical-align: middle;}
+
+/* 버튼 설정 */
+.btn {
+    display: inline-block; font-size: 15px; padding: 15px; margin: 5px;
+    text-align: center; vertical-align: middle; line-height: 10px;
+    color: #000000; background-color: #f18593; border: 2px solid #ae6c88;
+    border-radius: 0.3rem; box-shadow: 0 2px 0 #f18593, 2px 4px 6px #ae6c88;
+    letter-spacing: 1px; transition: all .15s linear;
+}
+.btn:hover { background: #f18593; box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2); }
+
+/* 카테고리 버튼 설정 */
+.btn-title {
+    display: inline-block; position: relative; overflow: hidden;
+    cursor: pointer; background: #f18593; transform: translate3d(0, 0, 0);
+    width: 200px; height: 50px; font-size: 15px;
+    margin: 20px; line-height: 50px;
+}
+
+/* 카테고리 버튼 효과 */
+.btn-title .wave {
+    opacity: .2; position: absolute;
+    bottom: 3%; left: 50%; background: #ff006c;
+    width: 300px; height: 300px; border-radius: 43%;
+    margin-left: -150px; margin-bottom: -300px;
+    transform-origin: 50% 48%; transition-duration: 0.75s; transition-property: margin-bottom; transition-timing-function: ease;
+}
+.btn-title:hover .wave { margin-bottom: -250px; animation: rotate 2000ms infinite linear; }
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+}
+
+/* a태그 속성 설정 */
+a { text-decoration: none; }
+a:link { color: #ffffff; }
+a:visited { color: #ffffff; }
+
+.point a { display: inline; text-decoration: none; }
+.point a:link { box-shadow: 0 -6px rgba(255, 255, 0, 0.3) inset; }
+.point a:visited { box-shadow: 0 -6px rgba(255, 255, 238, 0.3) inset; }
+
+/* 버튼 관련 미디어쿼리 */
+@media (max-width: 1320px){
+    .btn-title { width: 150px; margin: 10px; }
+}
+
+@media (max-width: 980px){
+    .btn-title { width: 120px; margin: 0 auto; }
+}
+
+@media (max-width: 720px){
+    .btn-title { width: 90px; }
+}
+
+@media (max-width: 600px){
+    .btn { font-size: 10px; padding: 10px; margin: 3px; }
+}
+
+@media (max-width: 580px){
+    .btn-title { width: 120px; font-size: 15px; height: 40px; line-height: 40px; }
+}
+
+@media (max-width: 540px){
+    .btn { font-size: 10px; padding: 10px; margin: 3px; }
+}
+
+@media (max-width: 472px){
+    .btn-title { width: 90px; }
+}
+
+@media (max-width: 380px){
+    .btn-title { width: 65px; height: 30px; line-height: 30px; }
+}
+
+/* 이하 수정이 필요한 것들 bootstrap에서 필요한 소스만 긁어오고 수정 미완 */
+
+.card-deck {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.card-deck .card {
+    margin-bottom: 15px;
+}
+
+@media (min-width: 576px) {
+    .card-deck {
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .card-deck .card {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex: 1 0 0%;
+        flex: 1 0 0%;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-right: 15px;
+        margin-bottom: 0;
+        margin-left: 15px;
+    }
+}
+
+
+.mb-3,
+.my-3 {
+    margin-bottom: 1rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.card > hr {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.card > .list-group:first-child .list-group-item:first-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.card > .list-group:last-child .list-group-item:last-child {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.mt-3,
+.my-3 {
+    margin-top: 1rem !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
